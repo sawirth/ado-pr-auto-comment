@@ -2,14 +2,14 @@
 
 exports[`Integration Test should add comments to a pr that already has some 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       0,
       "All comments have been added",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -19,11 +19,11 @@ exports[`Integration Test should add comments to a pr that already has some 1`] 
 
 exports[`Integration Test should add comments to a pr that already has some 2`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+  "calls": [
+    [
+      {
+        "comments": [
+          {
             "content": "new comment one",
           },
         ],
@@ -33,10 +33,10 @@ exports[`Integration Test should add comments to a pr that already has some 2`] 
       123456,
       "team-project",
     ],
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+    [
+      {
+        "comments": [
+          {
             "content": "new comment two",
           },
         ],
@@ -47,12 +47,12 @@ exports[`Integration Test should add comments to a pr that already has some 2`] 
       "team-project",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
-    Object {
+    {
       "type": "return",
       "value": undefined,
     },
@@ -62,14 +62,14 @@ exports[`Integration Test should add comments to a pr that already has some 2`] 
 
 exports[`Integration Test should add comments to a pr that has none 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       0,
       "All comments have been added",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -79,11 +79,11 @@ exports[`Integration Test should add comments to a pr that has none 1`] = `
 
 exports[`Integration Test should add comments to a pr that has none 2`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+  "calls": [
+    [
+      {
+        "comments": [
+          {
             "content": "comment one",
           },
         ],
@@ -93,10 +93,10 @@ exports[`Integration Test should add comments to a pr that has none 2`] = `
       123456,
       "team-project",
     ],
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+    [
+      {
+        "comments": [
+          {
             "content": "comment two",
           },
         ],
@@ -107,12 +107,12 @@ exports[`Integration Test should add comments to a pr that has none 2`] = `
       "team-project",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
-    Object {
+    {
       "type": "return",
       "value": undefined,
     },
@@ -122,14 +122,14 @@ exports[`Integration Test should add comments to a pr that has none 2`] = `
 
 exports[`Integration Test should fail because no comments were provided 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       2,
       "comments must be provided",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -141,14 +141,14 @@ exports[`Integration Test should fail because no comments were provided 2`] = `[
 
 exports[`Integration Test should ignore a comment that already exists and add the rest 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       0,
       "All comments have been added",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -158,11 +158,11 @@ exports[`Integration Test should ignore a comment that already exists and add th
 
 exports[`Integration Test should ignore a comment that already exists and add the rest 2`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+  "calls": [
+    [
+      {
+        "comments": [
+          {
             "content": "new comment two",
           },
         ],
@@ -173,8 +173,8 @@ exports[`Integration Test should ignore a comment that already exists and add th
       "team-project",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -184,14 +184,14 @@ exports[`Integration Test should ignore a comment that already exists and add th
 
 exports[`Integration Test should skip comments that are just whitespace 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       0,
       "All comments have been added",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -201,11 +201,11 @@ exports[`Integration Test should skip comments that are just whitespace 1`] = `
 
 exports[`Integration Test should skip comments that are just whitespace 2`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+  "calls": [
+    [
+      {
+        "comments": [
+          {
             "content": "comment one",
           },
         ],
@@ -215,10 +215,10 @@ exports[`Integration Test should skip comments that are just whitespace 2`] = `
       123456,
       "team-project",
     ],
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+    [
+      {
+        "comments": [
+          {
             "content": "comment two",
           },
         ],
@@ -229,12 +229,12 @@ exports[`Integration Test should skip comments that are just whitespace 2`] = `
       "team-project",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
-    Object {
+    {
       "type": "return",
       "value": undefined,
     },
@@ -244,14 +244,14 @@ exports[`Integration Test should skip comments that are just whitespace 2`] = `
 
 exports[`Integration Test should use provided newCommentDelimiter to split comments 1`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
+  "calls": [
+    [
       0,
       "All comments have been added",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
@@ -261,11 +261,11 @@ exports[`Integration Test should use provided newCommentDelimiter to split comme
 
 exports[`Integration Test should use provided newCommentDelimiter to split comments 2`] = `
 [MockFunction] {
-  "calls": Array [
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+  "calls": [
+    [
+      {
+        "comments": [
+          {
             "content": "comment one",
           },
         ],
@@ -275,10 +275,10 @@ exports[`Integration Test should use provided newCommentDelimiter to split comme
       123456,
       "team-project",
     ],
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+    [
+      {
+        "comments": [
+          {
             "content": "comment   
   two",
           },
@@ -289,10 +289,10 @@ exports[`Integration Test should use provided newCommentDelimiter to split comme
       123456,
       "team-project",
     ],
-    Array [
-      Object {
-        "comments": Array [
-          Object {
+    [
+      {
+        "comments": [
+          {
             "content": "comment
 
 three",
@@ -305,16 +305,16 @@ three",
       "team-project",
     ],
   ],
-  "results": Array [
-    Object {
+  "results": [
+    {
       "type": "return",
       "value": undefined,
     },
-    Object {
+    {
       "type": "return",
       "value": undefined,
     },
-    Object {
+    {
       "type": "return",
       "value": undefined,
     },

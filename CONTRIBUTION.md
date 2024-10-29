@@ -1,6 +1,6 @@
 # Building the extension
 3. Update the `version` property within `task/task.json` and `vss-extension.json`
-4. From the `tast/` folder, run `npm run package-extension` 
+4. From the `task/` folder, run `npm run package-extension` 
 5. This will create a `.vsix` file in the root directory. This is the extension file to upload.
 
 # Upload and publish extension
